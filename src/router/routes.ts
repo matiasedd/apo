@@ -21,14 +21,19 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/SignInPage.vue')
       },
       {
-        path: 'perfil',
-        name: 'Perfil',
-        component: () => import('pages/PerfilPage.vue')
+        path: 'home',
+        name: 'Home',
+        component: () => import('pages/HomePage.vue')
       },
       {
         path: 'recover',
         name: 'Recuperar Senha',
         component: () => import('pages/RecoverPage.vue')
+      },
+      {
+        path: 'avaliacao',
+        name: 'Avaliação',
+        component: () => import('pages/AvaliacaoPage.vue')
       }
     ],
   },

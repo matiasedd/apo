@@ -4,7 +4,7 @@
       <q-input v-model="email" filled label="Email" />
       <SenhaInputComponent />
       <a href="#/recover">Esqueci minha senha</a>
-      <q-btn unelevated color="primary" label="Entrar" @click="$router.push('perfil')" />
+      <q-btn unelevated color="primary" label="Entrar" @click="$router.push('home')" />
       <q-btn outline color="primary" label="Entrar como Usuário Anônimo" />
       <div class="text-center">
         Não possui uma conta?

@@ -29,9 +29,9 @@ export default defineComponent({
       return this.$route.path === path;
     },
     isUserPage() {
-      const pages = ['/perfil'];
+      const pages = ['/', '/login', '/signin', '/recover'];
       
-      return pages.includes(this.$route.path);
+      return !pages.includes(this.$route.path);
     },
   },
 });
