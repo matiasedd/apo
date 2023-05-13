@@ -4,11 +4,34 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
+    children: [
+      {
+        path: '',
+        name: 'APO',
+        component: () => import('pages/IndexPage.vue')
+      },
+      {
+        path: 'login',
+        name: 'Login',
+        component: () => import('pages/LoginPage.vue')
+      },
+      {
+        path: 'signin',
+        name: 'Cadastro',
+        component: () => import('pages/SignInPage.vue')
+      },
+      {
+        path: 'perfil',
+        name: 'Perfil',
+        component: () => import('pages/PerfilPage.vue')
+      },
+      {
+        path: 'recover',
+        name: 'Recuperar Senha',
+        component: () => import('pages/RecoverPage.vue')
+      }
+    ],
   },
-
-  // Always leave this as last one,
-  // but you can also remove it
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue'),
