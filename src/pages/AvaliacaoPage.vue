@@ -4,6 +4,8 @@
         <q-separator />
 
         <q-card-section>
+            <div class="text-bold q-mb-md">Gestão e Projeto</div>
+            <q-btn unelevated label="Avaliar Gestão e Projeto" color="primary" class="q-mb-md" />
 
             <div class="text-bold q-mb-md">Avaliações</div>
             <q-list bordered separator>
@@ -62,10 +64,6 @@
                 </q-item>
             </q-list>
         </q-card-section>
-
-        <q-card-actions align="right">
-            <q-btn flat label="Avaliar Gestão e Projeto" color="primary" />
-        </q-card-actions>
     </q-card>
 </template>
 
