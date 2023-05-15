@@ -4,7 +4,6 @@
         <q-input v-model="form.nome" filled label="Nome" />
         <q-input v-model="form.telefone" filled label="Telefone" type="tel" mask="(##) #####-####" />
         <EnderecoComponentVue v-model="form.endereco" />
-        <q-btn unelevated label="Salvar" color="primary" class="q-mt-md" />
     </div>
 </template>
   

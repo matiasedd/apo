@@ -6,7 +6,6 @@
         <q-input v-model="form.email" filled label="E-mail" />
         <SenhaInputComponent />
         <SenhaInputComponent label="Confirmar Senha" />
-        <q-btn unelevated filled label="Salvar" color="primary" class="q-mt-md" />
     </div>
 </template>
   
