@@ -26,6 +26,11 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/HomePage.vue')
       },
       {
+        path: 'unidade',
+        name: 'Cadastrar Unidade',
+        component: () => import('pages/UnidadePage.vue')
+      },
+      {
         path: 'recover',
         name: 'Recuperar Senha',
         component: () => import('pages/RecoverPage.vue')

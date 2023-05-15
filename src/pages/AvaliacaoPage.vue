@@ -4,15 +4,12 @@
         <q-separator />
 
         <q-card-section>
-            <div class="text-bold q-mb-md">Gestão e Projeto</div>
-            <q-btn unelevated label="Avaliar Gestão e Projeto" color="primary" class="q-mb-md" />
-
             <div class="text-bold q-mb-md">Avaliações</div>
             <q-list bordered separator>
                 <q-item v-for="avaliacao in avaliacoes" :key="avaliacao.id" class="q-pa-md">
                     <q-item-section>
                         <q-item-label>{{ avaliacao.titulo }}</q-item-label>
-                        <q-item-label caption>{{ new Date(avaliacao.data).toLocaleString() }}</q-item-label>
+                        <q-item-label caption>{{ avaliacao.data }}</q-item-label>
                     </q-item-section>
                     <q-item-section side>
                         <q-btn flat round dense icon="more_vert" color="primary">
@@ -33,6 +30,11 @@
                     </q-item-section>
                 </q-item>
             </q-list>
+        </q-card-section>
+
+        <q-card-section class="q-gutter-y-md">
+            <div class="text-bold">Gestão e Projeto</div>
+            <q-btn unelevated label="Avaliar Gestão e Projeto" color="primary" />
         </q-card-section>
 
         <q-card-section>
@@ -72,23 +74,26 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
     name: 'AvaliacoesPage',
+    mounted() {
+        this.avaliacoes.map((avaliacao) => (avaliacao.data = new Date(avaliacao.data).toLocaleString()));
+    },
     data() {
         return {
             avaliacoes: [
                 {
                     id: 1,
                     titulo: 'Avaliação 1',
-                    data: '2021-01-01T00:00:00'
+                    data: '2021-01-01T12:30:00'
                 },
                 {
                     id: 2,
                     titulo: 'Avaliação 2',
-                    data: '2021-01-01T00:00:00'
+                    data: '2021-01-01T12:30:00'
                 },
                 {
                     id: 3,
                     titulo: 'Avaliação 3',
-                    data: '2021-01-01T00:00:00'
+                    data: '2021-01-01T12:30:00'
                 }
             ],
             ambientes: [

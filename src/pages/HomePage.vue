@@ -31,7 +31,7 @@
         </q-card-section>
 
         <q-card-actions align="right">
-            <q-btn flat label="Adicionar Unidade" color="primary" />
+            <q-btn flat label="Adicionar" color="primary" @click="$router.push('/unidade')" />
         </q-card-actions>
     </q-card>
 </template>

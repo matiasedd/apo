@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import SenhaInputComponent from '../components/SenhaInputComponent.vue';
+import { SenhaInputComponent } from '../components';
 
 export default defineComponent({
   name: 'LoginPage',
