@@ -8,8 +8,8 @@
         </q-card-section>
 
         <q-card-actions align="right">
-            <q-btn flat label="Cancelar" color="primary" @click="$router.push('/login')" />
-            <q-btn type="submit" flat label="Recuperar" color="primary" />
+            <q-btn flat label="Voltar" color="primary" @click="$router.push('/login')" />
+            <q-btn unelevated type="submit" label="Enviar" color="primary" />
         </q-card-actions>
     </q-card>
 </template>

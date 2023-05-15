@@ -7,12 +7,12 @@ const routes: RouteRecordRaw[] = [
     children: [
       {
         path: '',
-        name: 'APO',
+        name: '',
         component: () => import('pages/IndexPage.vue')
       },
       {
         path: 'login',
-        name: 'Login',
+        name: 'Entrar',
         component: () => import('pages/LoginPage.vue')
       },
       {
@@ -27,7 +27,7 @@ const routes: RouteRecordRaw[] = [
       },
       {
         path: 'unidade',
-        name: 'Cadastrar Unidade',
+        name: 'Unidade',
         component: () => import('pages/UnidadePage.vue')
       },
       {

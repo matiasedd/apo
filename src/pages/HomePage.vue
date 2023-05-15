@@ -16,7 +16,7 @@
                         <q-btn flat round dense icon="more_vert" color="primary">
                             <q-menu>
                                 <q-list>
-                                    <q-item clickable v-close-popup>
+                                    <q-item clickable v-close-popup @click="$router.push('unidade')">
                                         <q-item-section>Editar</q-item-section>
                                     </q-item>
                                     <q-item clickable v-close-popup>

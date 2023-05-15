@@ -5,7 +5,7 @@
       <SenhaInputComponent />
       <a href="#/recover">Esqueci minha senha</a>
       <q-btn unelevated color="primary" label="Entrar" @click="$router.push('home')" />
-      <q-btn outline color="primary" label="Entrar como Usuário Anônimo" />
+      <q-btn outline color="primary" label="Entrar como Usuário Anônimo" @click="$router.push('avaliacao')" />
       <div class="text-center">
         Não possui uma conta?
         <a href="#/signin">Cadastre-se</a>
